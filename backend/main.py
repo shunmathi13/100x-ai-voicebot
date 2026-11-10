@@ -17,12 +17,8 @@ app = FastAPI(title="100x Personal AI Voice Bot")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://localhost:5174"
-        "https://100x-ai-voicebot-fbczg1vbl-100x-voicebot.vercel.app"
-],
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
