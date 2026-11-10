@@ -14,7 +14,7 @@ function App() {
     setAnswer("");
 
     try {
-      const response = await fetch("http://localhost:8000/chat", {
+      const response = await fetch("https://one00x-ai-voicebot.onrender.com/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
